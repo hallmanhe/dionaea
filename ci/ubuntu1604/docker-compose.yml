@@ -1,0 +1,10 @@
+version: '2'
+services:
+  dionaea:
+    build:
+      context: ../../
+      dockerfile: ci/ubuntu1604/dionaea/Dockerfile
+    ports:
+     - "3306:3306"
+    image: hallmanhe/dionaea
+    container_name: dionaea
