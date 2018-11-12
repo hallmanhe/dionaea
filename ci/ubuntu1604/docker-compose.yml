@@ -5,6 +5,6 @@ services:
       context: ../../
       dockerfile: ci/ubuntu1604/dionaea/Dockerfile
     ports:
-     - "3306:3306"
+     - "3306:3306" #mysql
     image: hallmanhe/dionaea
     container_name: dionaea

@@ -37,6 +37,6 @@ RUN cd /code && \
     make && \
     make install
 
-EXPOSE 21 42 69/udp 80 135 443 445 1433 1723 1883 1900/udp 3306 5060 5060/udp 5061 11211
+#EXPOSE 21 42 69/udp 80 135 443 445 1433 1723 1883 1900/udp 3306 5060 5060/udp 5061 11211
 
-CMD ["/opt/dionaea/bin/dionaea","-w","/opt/dionaea"]
+CMD ["/opt/dionaea/bin/dionaea","-w","/opt/dionaea","-c","/opt/dionaea/etc/dionaea/dionaea.cfg"]
