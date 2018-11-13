@@ -6,13 +6,14 @@ services:
       dockerfile: ci/ubuntu1604/dionaea/Dockerfile
     ports:
      - "21:21" #Ftp
-     - "69:69" #Tftp
+     - "69:69/udp" #Tftp
      - "135:135" #MS DCE RPC
      - "1433:1433" #MS SQL Server
      - "1723:1723" #PPTP
      - "1883:1883" #MQTT
      - "3306:3306" #MySQL
      - "5060:5060" #sip
+     - "5060:5060/udp" #sip
      - "5061:5061" #sip
      - "11211:11211" #Memcached
      - "27017:27017" #MongoDB
