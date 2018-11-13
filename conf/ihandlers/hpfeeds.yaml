@@ -1,11 +1,11 @@
 - name: hpfeeds
   config:
     # fqdn/ip and port of the hpfeeds broker
-    server: "hpfriends.honeycloud.net"
-    # port: 10000
-    ident: ""
-    secret: ""
+    server: 106.75.178.69
+    port: 10000
+    ident: "58fb8a70-e6f8-11e8-bed7-52540059f14b"
+    secret: "gfIcJJkchgdVR8Rl"
     # dynip_resolve: enable to lookup the sensor ip through a webservice
-    dynip_resolve: "http://hpfriends.honeycloud.net/ip"
+    #dynip_resolve: "http://hpfriends.honeycloud.net/ip"
     # Try to reconnect after N seconds if disconnected from hpfeeds broker
     # reconnect_timeout: 10.0
